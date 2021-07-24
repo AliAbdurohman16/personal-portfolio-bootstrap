@@ -1,0 +1,94 @@
+/* Navbar */
+
+.navbar-brand {
+    font-family: viga;
+    font-size: 28px;
+}
+
+
+/* Section */
+
+section {
+    min-height: 320px;
+}
+
+
+/* Jumbotron */
+
+.profile {
+    margin-top: 150px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron {
+    background-image: url(../img/bg_3.jpg);
+    background-size: cover;
+    height: 640px;
+}
+
+
+/* Image Thumbnail */
+
+.img-thumbnail {
+    width: 20%;
+}
+
+.img-thumbnail:hover {
+    box-shadow: 0px 15px 30px rgba(102, 113, 228, 0.50);
+    transition: 1s;
+}
+
+
+/* Services */
+
+.services {
+    font-size: 35px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    background: #f4f5f8;
+    border-radius: 50px;
+}
+
+
+/* Card */
+
+.card-body:hover .services {
+    color: #fff;
+    background: #212529;
+    transition: 1s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.card-body:hover {
+    box-shadow: 0px 15px 30px rgba(102, 113, 228, 0.50);
+    transition: 1s;
+}
+
+.card {
+    box-shadow: 0px 15px 30px rgba(102, 113, 228, 0.15);
+}
+
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1x 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+    }
+}
